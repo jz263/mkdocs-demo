@@ -13,11 +13,8 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
-      - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CONFIG_FILE: mkdocs.yml
-          EXTRA_PACKAGES: build-base
+
       - run: pip install mkdocs-material
+      - run: pip install --upgrade mkdocs-material
+      - run: git pull
       - run: mkdocs gh-deploy --force
