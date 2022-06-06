@@ -1,0 +1,17 @@
+# docs info
+site_name: Portfolio - Jiajie
+
+# repo
+repo_name: jz263/mkdocs-demo
+repo_url: https://github.com/jz263/mkdocs-demo
+edit_uri: ""
+
+# theme
+theme:
+  name: material
+  language: zh
+  highlightjs: true
+
+# page tree
+nav:
+  - Home: index.md
